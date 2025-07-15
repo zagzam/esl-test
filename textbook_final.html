@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESL Lesson 1: Nice to Meet You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+        body {
+            font-family: 'Pretendard', 'Inter', sans-serif;
+            background-color: #F9FAFB;
+        }
+        .korean-text {
+            font-family: 'Pretendard', sans-serif;
+        }
+        .input-focus:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+            border-color: #3B82F6;
+        }
+        .answer-text { display: none; }
+        .tip-content { display: none; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto max-w-4xl p-4 sm:p-6 lg:p-8">
+
+        <header class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900">Lesson 1: Nice to Meet You</h1>
+                <p class="text-gray-500 mt-1">Learn how to introduce yourself.</p>
+            </div>
+            <div class="flex items-center gap-4 mt-4 sm:mt-0">
+                <div class="flex items-center gap-3">
+                    <span class="text-sm text-gray-500 mt-1">Moby</span>
+                    <img src="https://pub-57ccf23bd3764fce8d7e37a06e7d93ff.r2.dev/simpson_resize.png" alt="User avatar" class="w-12 h-12 rounded-full object-cover border-2 border-blue-500">
+                </div>
+            </div>
+        </header>
+
+        <main class="flex flex-col gap-8">
+
+            <section id="intro-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-xl font-bold mb-4">Introduction</h2>
+                <img src="https://i.ibb.co/S7rRr1Bj/Intro-picture.jpg" alt="Two people shaking hands" class="w-full h-auto rounded-lg mb-4">
+                <h3 class="font-semibold text-lg mb-2">Learning Goal</h3>
+                <p class="text-gray-600 mb-1">In this lesson, you will learn how to introduce yourself to someone.</p>
+                <p class="text-sm text-gray-400 korean-text mb-4">이번 레슨에서는 누군가에게 자신을 소개하는 방법을 배우게 될 것입니다.</p>
+                <h3 class="font-semibold text-lg mb-2">Vocabulary Preview</h3>
+                 <p class="text-sm text-gray-400 korean-text mb-3">오늘의 주요 단어입니다.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-md">Name</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-md">Work</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-md">Job</span>
+                    <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-md">Hobby</span>
+                </div>
+            </section>
+
+            <section id="vocab-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-xl font-bold mb-1">Vocabulary</h2>
+                <p class="text-gray-500 mb-6">Learn the new words for this lesson. <span class="text-sm text-gray-400 korean-text">이번 과의 새로운 단어들을 배워보세요.</span></p>
+                <div class="space-y-6">
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://github.com/Gwen0709/SG/blob/main/vocab1.png?raw=true" alt="A name tag" class="w-full sm:w-32 h-32 object-cover rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-lg font-semibold">Name <span class="text-gray-400 font-normal korean-text">(이름)</span></h3>
+                                <span class="audio-icon cursor-pointer text-blue-500 hover:text-blue-700 transition" data-audio-id="audio-name">
+                                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 0 1 .75.75v18a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75Z" /><path d="M16.5 6.75a.75.75 0 0 0-1.5 0v10.5a.75.75 0 0 0 1.5 0V6.75Z" /><path d="M8.25 11.25a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5Z" /><path d="M19.5 9a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0V9Z" /><path d="M4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75v-4.5Z" /></svg>
+                                </span>
+                            </div>
+                            <p class="text-gray-600 mb-3"><strong>Definition:</strong> The word people use to call you.</p>
+                            <div class="bg-gray-50 border-l-4 border-blue-400 p-3 rounded-r-lg">
+                                <p class="text-gray-700">My name is Rina. <span class="text-sm text-gray-500 korean-text">제 이름은 리나입니다.</span></p>
+                                <p class="text-gray-700">My name is John. <span class="text-sm text-gray-500 korean-text">제 이름은 존입니다.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://github.com/Gwen0709/SG/blob/main/close-up-person-working-alternative-energy.jpg?raw=true" alt="Person working" class="w-full sm:w-32 h-32 object-cover rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-lg font-semibold">Work <span class="text-gray-400 font-normal korean-text">(일)</span></h3>
+                                <span class="audio-icon cursor-pointer text-blue-500 hover:text-blue-700 transition" data-audio-id="audio-work">
+                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 0 1 .75.75v18a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75Z" /><path d="M16.5 6.75a.75.75 0 0 0-1.5 0v10.5a.75.75 0 0 0 1.5 0V6.75Z" /><path d="M8.25 11.25a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5Z" /><path d="M19.5 9a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0V9Z" /><path d="M4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75v-4.5Z" /></svg>
+                                </span>
+                            </div>
+                            <p class="text-gray-600 mb-3"><strong>Definition:</strong> Anything you do to earn money or get something done.</p>
+                            <div class="bg-gray-50 border-l-4 border-blue-400 p-3 rounded-r-lg">
+                                <p class="text-gray-700">I work as a teacher. <span class="text-sm text-gray-500 korean-text">저는 선생님으로 일해요.</span></p>
+                                <p class="text-gray-700">I work as a chef. <span class="text-sm text-gray-500 korean-text">저는 요리사로 일하고 있습니다.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://i.ibb.co/n8YTRqpX/teacher.jpg" alt="Teacher in a classroom" class="w-full sm:w-32 h-32 object-cover rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-lg font-semibold">Job <span class="text-gray-400 font-normal korean-text">(직업)</span></h3>
+                                <span class="audio-icon cursor-pointer text-blue-500 hover:text-blue-700 transition" data-audio-id="audio-job">
+                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 0 1 .75.75v18a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75Z" /><path d="M16.5 6.75a.75.75 0 0 0-1.5 0v10.5a.75.75 0 0 0 1.5 0V6.75Z" /><path d="M8.25 11.25a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5Z" /><path d="M19.5 9a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0V9Z" /><path d="M4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75v-4.5Z" /></svg>
+                                </span>
+                            </div>
+                            <p class="text-gray-600 mb-3"><strong>Definition:</strong> A specific position where you do work.</p>
+                            <div class="bg-gray-50 border-l-4 border-blue-400 p-3 rounded-r-lg">
+                                <p class="text-gray-700">My job is teaching. <span class="text-sm text-gray-500 korean-text">저는 가르치는 일을 합니다.</span></p>
+                                <p class="text-gray-700">My job is driving. <span class="text-sm text-gray-500 korean-text">제 직업은 운전입니다.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://i.ibb.co/qMCSq4f9/boy-painting-canvas.jpg" alt="Boy painting on a canvas" class="w-full sm:w-32 h-32 object-cover rounded-lg flex-shrink-0">
+                        <div class="flex-grow">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="text-lg font-semibold">Hobby <span class="text-gray-400 font-normal korean-text">(취미)</span></h3>
+                                <span class="audio-icon cursor-pointer text-blue-500 hover:text-blue-700 transition" data-audio-id="audio-hobby">
+                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 0 1 .75.75v18a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75Z" /><path d="M16.5 6.75a.75.75 0 0 0-1.5 0v10.5a.75.75 0 0 0 1.5 0V6.75Z" /><path d="M8.25 11.25a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5Z" /><path d="M19.5 9a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 1.5 0V9Z" /><path d="M4.5 9.75A.75.75 0 0 1 5.25 9h.008a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75v-4.5Z" /></svg>
+                                </span>
+                            </div>
+                            <p class="text-gray-600 mb-3"><strong>Definition:</strong> An activity that you like doing when you are not working or studying.</p>
+                            <div class="bg-gray-50 border-l-4 border-blue-400 p-3 rounded-r-lg">
+                                <p class="text-gray-700">My hobby is painting. <span class="text-sm text-gray-500 korean-text">제 취미는 그림 그리기입니다.</span></p>
+                                <p class="text-gray-700">My hobby is reading. <span class="text-sm text-gray-500 korean-text">제 취미는 독서입니다.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="dialogue-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-xl font-bold mb-1">Dialogue</h2>
+                <p class="text-gray-500 mb-6">Listen and read the dialogue. <span class="text-sm text-gray-400 korean-text">대화를 듣고 읽으세요.</span></p>
+                <div class="space-y-4">
+                    <div class="flex items-end gap-3 justify-start">
+                        <img src="https://github.com/Gwen0709/SG/blob/main/person1.jpg?raw=true" alt="Sarah avatar" class="w-10 h-10 rounded-full object-cover">
+                        <div class="bg-gray-100 p-3 rounded-lg max-w-xs">
+                            <p>Hello! I'm Sarah. What is your name?</p>
+                            <p class="text-xs text-gray-500 mt-1 korean-text">안녕하세요! 저는 사라입니다. 성함이 어떻게 되세요?</p>
+                        </div>
+                    </div>
+                    <div class="flex items-end gap-3 justify-end">
+                        <div class="bg-blue-500 text-white p-3 rounded-lg max-w-xs">
+                            <p>I'm Julia Park.</p>
+                            <p class="text-xs text-blue-200 mt-1 korean-text">저는 줄리아 박입니다.</p>
+                        </div>
+                         <img src="https://github.com/Gwen0709/SG/blob/main/person3.jpg?raw=true" alt="Julia avatar" class="w-10 h-10 rounded-full object-cover">
+                    </div>
+                    <div class="flex items-end gap-3 justify-start">
+                        <img src="https://github.com/Gwen0709/SG/blob/main/person1.jpg?raw=true" alt="Sarah avatar" class="w-10 h-10 rounded-full object-cover">
+                        <div class="bg-gray-100 p-3 rounded-lg max-w-xs">
+                            <p>Nice to meet you, Julia. What do you do?</p>
+                            <p class="text-xs text-gray-500 mt-1 korean-text">만나서 반가워요, 줄리아. 무슨 일 하세요?</p>
+                        </div>
+                    </div>
+                     <div class="flex items-end gap-3 justify-end">
+                        <div class="bg-blue-500 text-white p-3 rounded-lg max-w-xs">
+                            <p>I work as a teacher.</p>
+                            <p class="text-xs text-blue-200 mt-1 korean-text">저는 교사로 일하고 있습니다.</p>
+                        </div>
+                         <img src="https://github.com/Gwen0709/SG/blob/main/person3.jpg?raw=true" alt="Julia avatar" class="w-10 h-10 rounded-full object-cover">
+                    </div>
+                     <div class="flex items-end gap-3 justify-start">
+                        <img src="https://github.com/Gwen0709/SG/blob/main/person1.jpg?raw=true" alt="Sarah avatar" class="w-10 h-10 rounded-full object-cover">
+                        <div class="bg-gray-100 p-3 rounded-lg max-w-xs">
+                            <p>That's great! What is your hobby?</p>
+                            <p class="text-xs text-gray-500 mt-1 korean-text">멋지군요! 취미가 무엇인가요?</p>
+                        </div>
+                    </div>
+                     <div class="flex items-end gap-3 justify-end">
+                        <div class="bg-blue-500 text-white p-3 rounded-lg max-w-xs">
+                            <p>I like reading books.</p>
+                            <p class="text-xs text-blue-200 mt-1 korean-text">난 책 읽는 것을 좋아해요.</p>
+                        </div>
+                         <img src="https://github.com/Gwen0709/SG/blob/main/person3.jpg?raw=true" alt="Julia avatar" class="w-10 h-10 rounded-full object-cover">
+                    </div>
+                </div>
+                <button class="mt-6 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center gap-2 audio-play-btn" data-audio-id="audio-dialogue1">
+                    <span class="btn-icon">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                          <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.647c1.295.742 1.295 2.545 0 3.286L7.279 20.99c-1.25.717-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <span class="btn-text">Play Dialogue</span>
+                </button>
+            </section>
+
+            <section id="expressions-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                 <h2 class="text-xl font-bold mb-6">Key Expressions</h2>
+                 <div class="space-y-8">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">"What's your name?" <span class="text-gray-400 font-normal text-base korean-text">이름이 뭐예요?</span></h3>
+                        <div class="grid md:grid-cols-2 gap-6 items-center">
+                            <div>
+                                <h4 class="font-semibold text-gray-700">How you can answer:</h4>
+                                <ul class="list-disc list-inside text-gray-600 my-2 space-y-1">
+                                    <li>My name is <span class="bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded">name</span>.</li>
+                                    <li>I am <span class="bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded">name</span>.</li>
+                                </ul>
+                                <h4 class="font-semibold text-gray-700 mt-4">Your turn:</h4>
+                                <p class="text-gray-500 my-2">"What's your name?"</p>
+                                <input type="text" placeholder="My name is..." class="w-full border border-gray-300 rounded-lg px-3 py-2 input-focus transition">
+                            </div>
+                            <img src="https://i.ibb.co/7tfq4m2P/Exp-1.png" alt="Person pointing to themselves" class="w-full h-auto object-cover rounded-lg">
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">"What do you do?" <span class="text-gray-400 font-normal text-base korean-text">무슨 일을 해요?</span></h3>
+                        <div class="grid md:grid-cols-2 gap-6 items-center">
+                            <div>
+                                <h4 class="font-semibold text-gray-700">How you can answer:</h4>
+                                <ul class="list-disc list-inside text-gray-600 my-2 space-y-1">
+                                    <li>I work as a <span class="bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded">job</span>.</li>
+                                    <li>I’m a <span class="bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded">job</span>.</li>
+                                </ul>
+                                <h4 class="font-semibold text-gray-700 mt-4">Your turn:</h4>
+                                <p class="text-gray-500 my-2">"What do you do?"</p>
+                                <input type="text" placeholder="I work as a..." class="w-full border border-gray-300 rounded-lg px-3 py-2 input-focus transition">
+                            </div>
+                            <img src="https://i.ibb.co/wF2zMDqy/Exp-2.png" alt="Various professionals" class="w-full h-auto object-cover rounded-lg">
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">"What is your hobby?" <span class="text-gray-400 font-normal text-base korean-text">취미가 뭐예요?</span></h3>
+                         <div class="grid md:grid-cols-2 gap-6 items-center">
+                            <div>
+                                <h4 class="font-semibold text-gray-700">How you can answer:</h4>
+                                <ul class="list-disc list-inside text-gray-600 my-2 space-y-1">
+                                    <li>I like to <span class="bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded">verb</span>.</li>
+                                    <li>My hobby is <span class="bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded">verb-ing</span>.</li>
+                                </ul>
+                                <h4 class="font-semibold text-gray-700 mt-4">Your turn:</h4>
+                                <p class="text-gray-500 my-2">"What is your hobby?"</p>
+                                <input type="text" placeholder="My hobby is..." class="w-full border border-gray-300 rounded-lg px-3 py-2 input-focus transition">
+                            </div>
+                            <img src="https://i.ibb.co/7d3wswwh/exp-3.png" alt="Person doing a hobby" class="w-full h-auto object-cover rounded-lg">
+                        </div>
+                    </div>
+                 </div>
+            </section>
+
+            <section id="self-practice-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-xl font-bold mb-1">Self-practice</h2>
+                <p class="text-gray-500 mb-4">Answer the following questions. <span class="text-sm text-gray-400 korean-text">다음 질문에 답하세요.</span></p>
+                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                    <li>What is your name?</li>
+                    <li>What do you do?</li>
+                    <li>What is your hobby?</li>
+                </ol>
+            </section>
+            
+            <section id="reading-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                 <h2 class="text-xl font-bold mb-1">Reading</h2>
+                <p class="text-gray-500 mb-4">Read the passage below. <span class="text-sm text-gray-400 korean-text">아래의 글을 읽으세요.</span></p>
+                <img src="https://i.ibb.co/wFFBnsJy/leo.jpg" alt="A man named Leo smiling" class="w-full max-w-sm mx-auto h-auto rounded-lg mb-4">
+                 <div class="bg-gray-50 border border-gray-200 p-4 rounded-lg text-center mb-4">
+                    <p class="text-gray-700 leading-relaxed">Hi! My <strong class="text-blue-600 font-semibold">name</strong> is Leo. I <strong class="text-blue-600 font-semibold">work</strong> as a singer. I love music. My <strong class="text-blue-600 font-semibold">hobby</strong> is singing. I also like running on Saturdays.</p>
+                </div>
+                
+                <div class="inline-block">
+                    <div class="tip-section cursor-pointer p-3 rounded-lg border-2 border-transparent hover:border-amber-400 hover:bg-amber-50 transition">
+                         <div class="flex items-center gap-2 font-semibold text-gray-700">
+                           <span class="text-2xl">💡</span> 
+                           <span>Tip</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip-content mt-2 p-3 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg">
+                    <p class="text-sm text-amber-900">You use 'Saturdays' (with an 's') to talk about something that happens regularly or every Saturday.</p>
+                    <p class="text-xs text-amber-700 mt-1 korean-text">'Saturdays' (뒤에 's'가 붙은 형태)는 어떤 일이 정기적으로 또는 매주 토요일마다 일어난다는 것을 말할 때 사용해요.</p>
+                </div>
+
+                <h3 class="font-semibold text-lg mt-6 mb-2">Comprehension Check:</h3>
+                <ol class="list-decimal list-inside space-y-2 text-gray-700 mb-4">
+                    <li>What is his name?</li>
+                    <li>What is his job?</li>
+                    <li>What is his hobby?</li>
+                </ol>
+                <button class="answer-toggle-btn text-sm font-semibold text-blue-600 hover:text-blue-800 transition bg-blue-100 px-4 py-2 rounded-lg hover:bg-blue-200">Show Answer</button>
+                <div class="answer-text mt-2 p-3 bg-gray-50 rounded-lg text-sm">
+                    <p><strong>1.</strong> His name is Leo.<br><strong>2.</strong> He is a singer.<br><strong>3.</strong> His hobbies are singing and running.</p>
+                </div>
+            </section>
+
+            <section id="listening-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-xl font-bold mb-1">Listening</h2>
+                <p class="text-gray-500 mb-6">Listen and complete the dialogue. <span class="text-sm text-gray-400 korean-text">대화를 듣고 완성하세요.</span></p>
+                <div class="space-y-2 text-sm">
+                     <div class="flex items-center gap-2">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/person1.jpg?raw=true" alt="Sarah avatar" class="w-8 h-8 rounded-full object-cover">
+                         <div class="bg-gray-100 p-2 rounded-lg">
+                            <p class="flex items-center">Hello! I'm Sarah. What is your <input type="text" class="inline-block w-20 border border-gray-300 rounded-md p-1 mx-1 text-center input-focus transition"></p>
+                        </div>
+                     </div>
+                     <div class="flex items-center gap-2 justify-end">
+                         <div class="bg-blue-500 text-white p-2 rounded-lg"><p>I'm Julia Park.</p></div>
+                          <img src="https://github.com/Gwen0709/SG/blob/main/person3.jpg?raw=true" alt="Julia avatar" class="w-8 h-8 rounded-full object-cover">
+                     </div>
+                     <div class="flex items-center gap-2">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/person1.jpg?raw=true" alt="Sarah avatar" class="w-8 h-8 rounded-full object-cover">
+                         <div class="bg-gray-100 p-2 rounded-lg"><p>Nice to meet you, Julia. What do you do?</p></div>
+                     </div>
+                      <div class="flex items-center gap-2 justify-end">
+                         <div class="bg-blue-500 text-white p-2 rounded-lg">
+                            <p class="flex items-center text-white">I <input type="text" class="inline-block text-gray-800 w-16 border border-blue-300 bg-blue-100 rounded-md p-1 mx-1 text-center input-focus transition"> as a teacher.</p>
+                        </div>
+                          <img src="https://github.com/Gwen0709/SG/blob/main/person3.jpg?raw=true" alt="Julia avatar" class="w-8 h-8 rounded-full object-cover">
+                     </div>
+                     <div class="flex items-center gap-2">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/person1.jpg?raw=true" alt="Sarah avatar" class="w-8 h-8 rounded-full object-cover">
+                         <div class="bg-gray-100 p-2 rounded-lg">
+                            <p class="flex items-center">That's great! What is your <input type="text" class="inline-block w-20 border border-gray-300 rounded-md p-1 mx-1 text-center input-focus transition"></p>
+                        </div>
+                     </div>
+                      <div class="flex items-center gap-2 justify-end">
+                         <div class="bg-blue-500 text-white p-2 rounded-lg"><p>I like reading books.</p></div>
+                          <img src="https://github.com/Gwen0709/SG/blob/main/person3.jpg?raw=true" alt="Julia avatar" class="w-8 h-8 rounded-full object-cover">
+                     </div>
+                </div>
+                 <div class="mt-6 flex flex-wrap gap-2">
+                    <button class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition flex items-center gap-2 audio-play-btn" data-audio-id="audio-dialogue2">
+                       <span class="btn-icon">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                              <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.647c1.295.742 1.295 2.545 0 3.286L7.279 20.99c-1.25.717-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+                            </svg>
+                       </span>
+                       <span class="btn-text">Play</span>
+                    </button>
+                    <button class="answer-toggle-btn text-sm font-semibold text-blue-600 hover:text-blue-800 transition bg-blue-100 px-4 py-2 rounded-lg hover:bg-blue-200">Show Answer</button>
+                </div>
+                <div class="answer-text mt-2 p-3 bg-gray-50 rounded-lg text-sm">
+                     <p><strong>Answers:</strong> name, work, hobby</p>
+                </div>
+            </section>
+
+            <section id="vocab-check-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                 <h2 class="text-xl font-bold mb-1">Vocabulary Check</h2>
+                <p class="text-gray-500 mb-4">Fill in the blanks below the pictures. <span class="text-sm text-gray-400 korean-text">사진을 보고 아래 빈칸을 채우세요.</span></p>
+                 <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-md">Name</span>
+                    <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-md">Job</span>
+                    <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-md">Work</span>
+                    <span class="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-md">Hobby</span>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex flex-col">
+                        <img src="https://github.com/Gwen0709/SG/blob/main/Picture2.png?raw=true" alt="A person teaching" class="w-full h-auto object-cover rounded-lg">
+                        <input type="text" class="w-full mt-2 border-gray-300 rounded-lg px-3 py-1 text-center input-focus transition bg-gray-50">
+                    </div>
+                     <div class="flex flex-col">
+                        <img src="https://i.ibb.co/xK9CWCb3/vocab2.png" alt="A nametag" class="w-full h-auto object-cover rounded-lg">
+                        <input type="text" class="w-full mt-2 border-gray-300 rounded-lg px-3 py-1 text-center input-focus transition bg-gray-50">
+                    </div>
+                     <div class="flex flex-col">
+                        <img src="https://i.ibb.co/Tx7HTghw/vocab3.png" alt="A person painting" class="w-full h-auto object-cover rounded-lg">
+                        <input type="text" class="w-full mt-2 border-gray-300 rounded-lg px-3 py-1 text-center input-focus transition bg-gray-50">
+                    </div>
+                     <div class="flex flex-col">
+                        <img src="https://i.ibb.co/C566QMCL/vocab4.png" alt="A person working on a laptop" class="w-full h-auto object-cover rounded-lg">
+                        <input type="text" class="w-full mt-2 border-gray-300 rounded-lg px-3 py-1 text-center input-focus transition bg-gray-50">
+                    </div>
+                </div>
+                 <button class="answer-toggle-btn text-sm font-semibold text-blue-600 hover:text-blue-800 transition bg-blue-100 px-4 py-2 rounded-lg hover:bg-blue-200 mt-4">Show Answer</button>
+                <div class="answer-text mt-2 p-3 bg-gray-50 rounded-lg text-sm">
+                    <p><strong>Answers (left to right, top to bottom):</strong> job, name, hobby, work</p>
+                </div>
+            </section>
+            
+            <section id="expressions-check-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-xl font-bold mb-1">Expressions Check</h2>
+                <p class="text-gray-500 mb-4">Make an introduction for each person. <span class="text-sm text-gray-400 korean-text">각 인물에 대해 소개를 작성하세요.</span></p>
+                <div class="space-y-6">
+                    <div>
+                        <img src="https://i.ibb.co/0RXxdTkT/Doctor.png" alt="A doctor" class="w-full max-w-sm mx-auto h-auto rounded-lg mb-2">
+                        <p class="text-gray-600 leading-relaxed text-center">Hi! My name is <input type="text" class="inline-block w-24 border border-gray-300 rounded-md px-2 py-1 mx-1 text-center input-focus transition">. I work as a <input type="text" class="inline-block w-24 border border-gray-300 rounded-md px-2 py-1 mx-1 text-center input-focus transition">. I like <input type="text" class="inline-block w-24 border border-gray-300 rounded-md px-2 py-1 mx-1 text-center input-focus transition">.</p>
+                        <div class="text-center mt-2">
+                            <button class="answer-toggle-btn text-sm font-semibold text-blue-600 hover:text-blue-800 transition bg-blue-100 px-3 py-1 rounded-lg hover:bg-blue-200">Show Answer</button>
+                            <div class="answer-text mt-2 p-2 bg-gray-50 rounded-lg text-sm"><strong>Answers:</strong> Ben, doctor, baseball</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="https://i.ibb.co/9kbcy9Jw/Picture1.jpg" alt="A chef" class="w-full max-w-sm mx-auto h-auto rounded-lg mb-2">
+                        <p class="text-gray-600 leading-relaxed text-center">Hi! I am <input type="text" class="inline-block w-24 border border-gray-300 rounded-md px-2 py-1 mx-1 text-center input-focus transition">. I am a <input type="text" class="inline-block w-24 border border-gray-300 rounded-md px-2 py-1 mx-1 text-center input-focus transition">. My hobby is <input type="text" class="inline-block w-24 border border-gray-300 rounded-md px-2 py-1 mx-1 text-center input-focus transition">.</p>
+                        <div class="text-center mt-2">
+                             <button class="answer-toggle-btn text-sm font-semibold text-blue-600 hover:text-blue-800 transition bg-blue-100 px-3 py-1 rounded-lg hover:bg-blue-200">Show Answer</button>
+                             <div class="answer-text mt-2 p-2 bg-gray-50 rounded-lg text-sm"><strong>Answers:</strong> Jenny, chef, reading</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="speaking-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-xl font-bold mb-1">Speaking Practice</h2>
+                <p class="text-gray-500 mb-6">Complete the dialogue by filling in your own answers. <span class="text-sm text-gray-400 korean-text">자신만의 답변으로 대화를 완성하세요.</span></p>
+                <div class="space-y-4">
+                    <div class="flex items-end gap-3 justify-start">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/teacher.jpg?raw=true" alt="Teacher avatar" class="w-10 h-10 rounded-full object-cover">
+                        <div class="bg-gray-100 p-3 rounded-lg"><p>Hello! I'm Sarah. What is your name?</p></div>
+                    </div>
+                    <div class="flex items-end gap-3 justify-end">
+                        <input type="text" placeholder="Type your answer..." class="w-full border-gray-300 rounded-lg px-3 py-2 input-focus transition bg-gray-50 text-right">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/person2.jpg?raw=true" alt="Student avatar" class="w-10 h-10 rounded-full object-cover">
+                    </div>
+                    <div class="flex items-end gap-3 justify-start">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/teacher.jpg?raw=true" alt="Teacher avatar" class="w-10 h-10 rounded-full object-cover">
+                        <div class="bg-gray-100 p-3 rounded-lg"><p>Nice to meet you! What do you do?</p></div>
+                    </div>
+                     <div class="flex items-end gap-3 justify-end">
+                        <input type="text" placeholder="Type your answer..." class="w-full border-gray-300 rounded-lg px-3 py-2 input-focus transition bg-gray-50 text-right">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/person2.jpg?raw=true" alt="Student avatar" class="w-10 h-10 rounded-full object-cover">
+                    </div>
+                     <div class="flex items-end gap-3 justify-start">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/teacher.jpg?raw=true" alt="Teacher avatar" class="w-10 h-10 rounded-full object-cover">
+                        <div class="bg-gray-100 p-3 rounded-lg"><p>That's great! What is your hobby?</p></div>
+                    </div>
+                    <div class="flex items-end gap-3 justify-end">
+                        <input type="text" placeholder="Type your answer..." class="w-full border-gray-300 rounded-lg px-3 py-2 input-focus transition bg-gray-50 text-right">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/person2.jpg?raw=true" alt="Student avatar" class="w-10 h-10 rounded-full object-cover">
+                    </div>
+                     <div class="flex items-end gap-3 justify-start">
+                         <img src="https://github.com/Gwen0709/SG/blob/main/teacher.jpg?raw=true" alt="Teacher avatar" class="w-10 h-10 rounded-full object-cover">
+                        <div class="bg-gray-100 p-3 rounded-lg"><p>That's nice!</p></div>
+                    </div>
+                </div>
+            </section>
+
+             <section id="wrap-up-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-xl font-bold mb-1">Wrap up</h2>
+                <p class="text-gray-500 mb-4">Check the goals you completed. <span class="text-sm text-gray-400 korean-text">완료한 목표들을 확인해 보세요.</span></p>
+                <div class="space-y-3">
+                    <label class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition cursor-pointer">
+                        <input type="checkbox" class="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">I can introduce myself in English. <br><span class="text-xs text-gray-500 korean-text">저는 영어로 저를 소개할 수 있습니다.</span></span>
+                    </label>
+                     <label class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition cursor-pointer">
+                        <input type="checkbox" class="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">I learned the words name, hobby, job, and work. <br><span class="text-xs text-gray-500 korean-text">저는 이름, 취미, 직업, 그리고 일 단어를 배웠습니다.</span></span>
+                    </label>
+                     <label class="flex items-start gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition cursor-pointer">
+                        <input type="checkbox" class="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                        <span class="text-sm text-gray-700">I can make sentences using these new words. <br><span class="text-xs text-gray-500 korean-text">저는 이 새로운 단어들을 사용해서 문장을 만들 수 있어요.</span></span>
+                    </label>
+                </div>
+             </section>
+            
+             <section id="homework-card" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h2 class="text-xl font-bold mb-2">Homework: "Facts about Me"</h2>
+                <p class="text-gray-500 mb-6">Write short sentences about yourself. <span class="text-sm text-gray-400 korean-text">자신에 대한 짧은 문장들을 작성하세요.</span></p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                       <span class="font-medium text-gray-700 w-24">I'm</span>
+                       <input type="text" class="w-full border-gray-300 rounded-lg px-3 py-2 input-focus transition bg-gray-50">
+                    </div>
+                     <div class="flex items-center gap-2">
+                       <span class="font-medium text-gray-700 w-24">I work as a</span>
+                       <input type="text" class="w-full border-gray-300 rounded-lg px-3 py-2 input-focus transition bg-gray-50">
+                    </div>
+                     <div class="flex items-center gap-2">
+                       <span class="font-medium text-gray-700 w-24">My job is</span>
+                       <input type="text" class="w-full border-gray-300 rounded-lg px-3 py-2 input-focus transition bg-gray-50">
+                    </div>
+                     <div class="flex items-center gap-2">
+                       <span class="font-medium text-gray-700 w-24">My hobby is</span>
+                       <input type="text" class="w-full border-gray-300 rounded-lg px-3 py-2 input-focus transition bg-gray-50">
+                    </div>
+                </div>
+                 <button class="mt-6 w-full bg-blue-600 text-white font-semibold py-3 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2">
+                    <span>Lesson Complete!</span>
+                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                       <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.06-1.06l-3.109 3.108-1.59-1.59a.75.75 0 0 0-1.061 1.06l2.122 2.12a.75.75 0 0 0 1.06 0l3.648-3.647Z" clip-rule="evenodd" />
+                     </svg>
+                </button>
+            </section>
+
+        </main>
+    </div>
+
+    <audio id="audio-name" src="https://github.com/Gwen0709/SG/raw/main/name.wav"></audio>
+    <audio id="audio-work" src="https://github.com/Gwen0709/SG/raw/main/work.wav"></audio>
+    <audio id="audio-job" src="https://github.com/Gwen0709/SG/raw/main/job.wav"></audio>
+    <audio id="audio-hobby" src="https://github.com/Gwen0709/SG/raw/main/hobby.wav"></audio>
+    <audio id="audio-dialogue1" src="https://github.com/Gwen0709/SG/raw/main/Dialogue.mp3"></audio>
+    <audio id="audio-dialogue2" src="https://github.com/Gwen0709/SG/raw/refs/heads/main/DialogueV2.mp3"></audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const stopAllAudio = () => {
+                document.querySelectorAll('audio').forEach(a => {
+                    a.pause();
+                    a.currentTime = 0;
+                });
+            };
+
+            document.querySelectorAll('.answer-toggle-btn').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const parent = e.target.closest('.text-center, section');
+                    const answerText = parent.querySelector('.answer-text');
+                    if (answerText) {
+                        const isVisible = answerText.style.display === 'block' || answerText.style.display === 'inline-block';
+                        answerText.style.display = isVisible ? 'none' : 'block';
+                        button.textContent = isVisible ? 'Show Answer' : 'Hide Answer';
+                    }
+                });
+            });
+
+            document.querySelectorAll('.audio-icon').forEach(icon => {
+                icon.addEventListener('click', () => {
+                    const audio = document.getElementById(icon.dataset.audioId);
+                    if (audio) {
+                        stopAllAudio();
+                        audio.play();
+                    }
+                });
+            });
+
+            document.querySelectorAll('.audio-play-btn').forEach(button => {
+                const audio = document.getElementById(button.dataset.audioId);
+                const btnIcon = button.querySelector('.btn-icon svg');
+                const btnText = button.querySelector('.btn-text');
+                const playIconPath = "M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.647c1.295.742 1.295 2.545 0 3.286L7.279 20.99c-1.25.717-2.779-.217-2.779-1.643V5.653Z";
+                const pauseIconPath = "M5.25 6.375a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1-.75-.75Zm0 10.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1-.75-.75Z";
+
+                if (audio) {
+                    button.addEventListener('click', () => {
+                        if (audio.paused) {
+                            stopAllAudio();
+                            audio.play();
+                        } else {
+                            audio.pause();
+                        }
+                    });
+
+                    audio.addEventListener('play', () => {
+                        if(btnIcon) btnIcon.innerHTML = `<path fill-rule="evenodd" d="${pauseIconPath}" clip-rule="evenodd" />`;
+                        if(btnText) btnText.textContent = btnText.textContent.replace('Play', 'Pause');
+                    });
+
+                    audio.addEventListener('pause', () => {
+                        if(btnIcon) btnIcon.innerHTML = `<path fill-rule="evenodd" d="${playIconPath}" clip-rule="evenodd" />`;
+                        if(btnText) btnText.textContent = btnText.textContent.replace('Pause', 'Play');
+                        audio.currentTime = 0;
+                    });
+
+                    audio.addEventListener('ended', () => {
+                        if(btnIcon) btnIcon.innerHTML = `<path fill-rule="evenodd" d="${playIconPath}" clip-rule="evenodd" />`;
+                        if(btnText) btnText.textContent = btnText.textContent.replace('Pause', 'Play');
+                    });
+                }
+            });
+
+            // Improved tip-section toggle logic
+            document.querySelectorAll('.tip-section').forEach(tipHeader => {
+                tipHeader.addEventListener('click', () => {
+                    // Find the closest .tip-content after this tip-section
+                    let tipContent = tipHeader.closest('.inline-block')?.nextElementSibling;
+                    if (!(tipContent && tipContent.classList.contains('tip-content'))) {
+                        // fallback: search next siblings
+                        tipContent = tipHeader.parentElement?.parentElement?.nextElementSibling;
+                    }
+                    if (tipContent && tipContent.classList.contains('tip-content')) {
+                        // Optionally close all other tips for better UX
+                        document.querySelectorAll('.tip-content').forEach(tc => {
+                            if (tc !== tipContent) tc.style.display = 'none';
+                        });
+                        const isVisible = tipContent.style.display === 'block';
+                        tipContent.style.display = isVisible ? 'none' : 'block';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
